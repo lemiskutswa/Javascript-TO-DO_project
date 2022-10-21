@@ -15,7 +15,6 @@ addTodo(todo3);
 let todos = ['Wash car', 'Clean house','Wash utensils'];
 todos.push('cook');
 
-
 console.log(todos);
 
 /*
