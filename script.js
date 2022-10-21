@@ -20,10 +20,6 @@ element.innerText = button1;
 document.body.appendChild(element);
 
 
-
-let myAge = 24;
-console.log('I am ' + myAge + ' years old.');
-
 /*
 - document.createElement lets you create any HTML element but you have to specify it. 
 - remember to introduce it as a variable. 
