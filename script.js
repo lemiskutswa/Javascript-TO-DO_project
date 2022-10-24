@@ -1,21 +1,15 @@
-let todo1 = 'Wash wash';
-let todo2 = 'Buy Groceries';
-let todo3 = 'Wash car';
-
-function addTodo(todoTitle) {
-    let element = document.createElement('div');
-    element.innerText = todoTitle;
-    document.body.appendChild(element);
-} 
-
-addTodo(todo1);
-addTodo(todo2);
-addTodo(todo3);
 
 let todos = ['Wash car', 'Clean house','Wash utensils'];
-todos.push('cook');
 
-console.log(todos);
+todos.forEach( function(todoTitle) {
+let element = document.createElement('div');
+element.innerText = todoTitle;
+document.body.appendChild(element);
+});
+
+function addTodo() {
+    todos.push('new todo');
+}
 
 /*
 - document.createElement lets you create any HTML element but you have to specify it. 
