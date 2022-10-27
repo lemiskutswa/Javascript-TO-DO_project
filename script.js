@@ -8,8 +8,29 @@ document.body.appendChild(element);
 });
 
 function addTodo() {
-    todos.push('new todo');
+    let textbox = document.getElementById('todo-title');
+    let title = textbox.value;
+    todos.push(title);
+
+    render();
 }
+
+ function render() {
+//add code to reset the list before adding a new item. 
+
+document.getElementById('todo-list').innerHTML = '';
+    todos.forEach( function(todoTitle) {
+        let element = document.createElement('div');
+        element.innerText = todoTitle;
+
+        let todoList = document.getElementById('todo-list');
+        todoList.appendChild(element);
+        });
+ }
+
+
+
+
 
 /*
 - document.createElement lets you create any HTML element but you have to specify it. 

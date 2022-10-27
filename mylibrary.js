@@ -41,3 +41,16 @@ let courses = ['math', 'comp science', 'history', 'chemistry', 'biology'];
 courses.forEach(function toUpper(str) {
     console.log(str.toUpperCase());
 });
+
+//Onclick button the count goes up
+let count = 0;
+function theCounter() {
+    count = count + 1;
+    let counter = document.getElementById('counter');
+    counter.innerText = count; 
+}
+
+
+function buttonClick() {
+    let button = document.getElementById('button-1');
+    button.innerText = 'Done';}
